@@ -30,8 +30,6 @@ return $show;
 //生成短网址 
 function url_short($url){ 
 	$url = crc32($url); 
-	echo sprintf("%u",$url); 
-	exit;
 	$result = sprintf("%u",$url); 
 	return base62($result); 
 } 
